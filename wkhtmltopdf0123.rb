@@ -10,10 +10,10 @@ class Wkhtmltopdf0123 < Formula
 
   def install
     # fix that missing TEMP= include.
-    inreplace 'common.pri' do |s|
-      s.gsub! 'TEMP = $$[QT_INSTALL_LIBS] libQtGui.prl', ''
-      s.gsub! 'include($$join(TEMP, "/"))', ''
-    end
+    # inreplace 'common.pri' do |s|
+    #   s.gsub! 'TEMP = $$[QT_INSTALL_LIBS] libQtGui.prl', ''
+    #   s.gsub! 'include($$join(TEMP, "/"))', ''
+    # end
 
     # It tries to build universally, but Qt is bottled as 64bit => build error.
     # If we are 64bit, do not compile with -arch i386.  This is a Homebrew
