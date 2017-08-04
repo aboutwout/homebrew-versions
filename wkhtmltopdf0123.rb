@@ -1,6 +1,6 @@
 require 'formula'
 
-class Wkhtmltopdf < Formula
+class Wkhtmltopdf0123 < Formula
   homepage 'https://wkhtmltopdf.org/'
   url 'http://downloads.wkhtmltopdf.org/#{version.major_minor}/#{version}/wkhtmltox-#{version}_osx-cocoa-x86-64.pkg'
   sha256 '402209589279e092c94d17c76e6fdda6be5cadb21ce12e7c093c41f82b757506'
