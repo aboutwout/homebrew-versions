@@ -2,9 +2,9 @@ require 'formula'
 
 class Wkhtmltopdf0123 < Formula
   homepage 'https://wkhtmltopdf.org/'
-  url 'http://downloads.wkhtmltopdf.org/#{version.major_minor}/#{version}/wkhtmltox-#{version}_osx-cocoa-x86-64.pkg'
-  sha256 '402209589279e092c94d17c76e6fdda6be5cadb21ce12e7c093c41f82b757506'
   version '0.12.3'
+  url "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/#{version}/wkhtmltox-#{version}_osx-cocoa-x86-64.pkg"
+  sha256 'c8aa0f9456444847d08c6c772e2e0e4244813e6a2911eba6c940439df9abd0f0'
 
   depends_on 'qt'
 
